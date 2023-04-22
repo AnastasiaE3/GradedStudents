@@ -36,11 +36,11 @@ public class Student {
        for (int i = 0; i < scores.length(); i ++) {
            scores.append("Exam");
            scores.append(i + 1);
-           scores.append("->");
+           scores.append(" -> ");
            scores.append(examScores[i]);
            scores.append("\n");
        }
-       return scores.toString();
+       return String.valueOf(examScores);
    }
 
    public void addExamScore(double examScore) {
